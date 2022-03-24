@@ -1,0 +1,867 @@
+@import "reset.scss";
+@import "fonts";
+@import "comon.scss";
+
+@import 'swiper.scss';
+
+@import "header.scss";
+@import 'footer.scss';
+@import 'section-catalog';
+@import 'service.scss';
+@import 'complexService.scss';
+@import 'case.scss';
+@import '404.scss';
+
+
+
+
+
+// ========= INTRO =================
+.intro {
+  background-color: $black;
+  padding: 33px 0 160px;
+  position: relative;
+
+  &__top {
+    margin-bottom: 160px;
+  }
+  &__top-img {
+    display: none;
+    flex: 0 0 44.7%;
+  }
+  @media screen and (max-width:1256px) {
+    padding-bottom: 120px;
+
+    &__top {
+      margin-bottom: 120px;
+    }
+    &__top-img {
+      flex: 0 0 39%;
+    }
+  }
+  @media screen and (max-width:900px) {
+    &__top-img {
+      flex: 0 0 270px;
+    }
+  }
+  @media screen and (min-width:768px) {
+    &__top-img {
+      display: block;
+    }
+
+  }
+  @media screen and (max-width:768px) {
+    padding-bottom: 80px;
+    &__top {
+      margin-bottom: 80px;
+    }
+  }
+  @media screen and (max-width:400px) {
+    padding: 40px 0 60px;
+    &__top {
+      margin-bottom: 60px;
+    }
+  }
+  
+}
+.intro-top {
+  display: flex;
+  
+  &__block {
+    flex: 1 0 10%;
+    margin-right: 90px;
+    padding-top: 76px;
+  }
+  &__suptitle {
+    line-height: 1.6;
+    color: $gray;
+    margin-bottom: 8px;
+  }
+  &__title {
+    font-family: STIXTwoText;
+    font-size: 55px;
+    line-height: 135%;
+    margin-bottom: 16px;
+    color: #fff;
+  }
+  &__text {
+    font-size: 18px;
+    line-height: 160%;
+    color: $gray;
+    margin-bottom: 48px;
+  }
+  &__buttons {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+  }
+
+  @media screen and (max-width:1256px) {
+    &__block {
+      margin-right: 60px;
+    }
+    &__title {
+      font-size: 48px;
+    }
+    &__text {
+      font-size: 16px;
+    }
+  }
+
+  @media screen and (max-width:900px) {
+    &__block {
+      margin-right: 0px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    &__block {
+      margin-right: -40px;
+    }
+    &__title {
+      font-size: 44px;
+      margin-bottom: 14px;
+    }
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    &__block {
+      margin-right: 0;
+      padding-top: 33px;
+      text-align: center;
+      align-items: center;
+    }
+    &__suptitle {
+      margin-bottom: 0;
+    }
+    &__buttons {
+      flex-direction: column;
+      gap: 30px;
+    }
+    &__text {
+      margin: 0 auto;
+      margin-bottom: 35px;
+      max-width: 400px;
+    }
+  }
+  @media screen and (max-width:400px) {
+    &__block {
+      padding-top: 0;
+    }
+    &__title {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+    &__text {
+      margin-bottom: 30px;
+    }
+    &__buttons {
+      gap: 25px;
+    }
+  }
+}
+
+
+
+.intro-main {
+  display: flex;
+
+  &__img {
+    display: none;
+    flex: 0 0 30%;
+    margin-right: 50px;
+  }
+  &__title {
+    font-family: STIXTwoText;
+    font-size: 38px;
+    line-height: 135%;
+    color: #fff;
+    margin-bottom: 16px;
+  }
+  &__text {
+    margin-bottom: 50px;
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    row-gap: 20px;
+  }
+  &__cards:not(:last-child) {
+    margin-bottom: 100px;
+  }
+  &__col {
+    padding: 0 10px;
+    flex: 0 0 50%;
+  }
+  @media screen and (max-width: 1256px) {
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    &__img {
+      display: block;
+    }
+  }
+  @media screen and (max-width:768px) {
+
+    &__cards:not(:last-child) {
+      margin-bottom: 80px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+    
+  }
+  @media screen and (max-width: 550px) {
+    &__cards_tablet_col1 &__col {
+      flex: 0 0 100%;
+    }
+    &__title {
+      font-size: 28px;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    &__title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 35px;
+    }
+    &__col {
+      flex: 0 0 100%;
+    }
+    &__cards {
+      row-gap: 15px;
+    }
+    &__cards:not(:last-child) {
+      margin-bottom: 60px;
+    }
+  }
+
+}
+.intro-card {
+  flex: 0 0 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  position: relative;
+  z-index: 2;
+  transition: .25s;
+  cursor: pointer;
+
+  &_border::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    bottom: -1px;
+    right: -1px;
+    left: -1px;
+    background:  linear-gradient(151deg, #DA4533 0%, rgba(218, 69, 51, 0) 33.76%);
+    border-radius: 8px;
+    z-index: -2;
+  }
+  &_border::after {
+    content: "";
+    position: absolute;
+    top: -0px;
+    bottom: -0px;
+    right: -0px;
+    left: -0px;
+    background: linear-gradient(rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.05) 100%);
+    background-color: $black;
+    border-radius: 8px;
+    z-index: -2;
+  }
+  &__bg {
+    position: absolute;
+    top: 0px;
+    bottom: -0px;
+    right: -0px;
+    left: -0px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    z-index: -1;
+  }
+  &__title {
+    font-size: 36px;
+    color: #fff;
+    line-height: 1.25;
+    font-family: STIXTwoText;
+    font-weight: 500;
+  }
+  &__text {
+    max-width: 290px;
+  }
+  &_svg {
+    padding: 10px 60px;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.1)
+  }
+  &:hover::after   {
+    background: linear-gradient(rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), $black;
+  }
+  @media screen and (max-width: 1024px) {
+    &_svg img {
+      width: 243px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// ====================QUIZ===============
+
+.quiz {
+  background-color: $red;
+  padding: 160px 0;
+  color: #fff;
+  position: relative;
+  &__container {
+    position: relative;
+    width: 85%;
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, -60%);
+  }
+  &__title {
+    font-family: STIXTwoText;
+    font-size: 38px;
+    line-height: 135%;
+    font-weight: 500;
+    margin-bottom: 16px;
+  }
+  &__text {
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  &__form {
+    background-color: $black;
+    border-radius: 10px;
+    padding: 40px;
+    margin-bottom: 50px;
+  }
+  @media screen and (max-width:1500px) {
+    &__img {
+      width: 300px;
+      transform: translate(100%, -70%);
+    }
+  }
+  @media screen and (max-width:1256px) {
+    padding: 120px 0;
+    &__container {
+      width: 65%;
+    }
+    &__img {
+      width: 53%;
+    }
+    &__text {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media screen and (max-width:768px) {
+    padding: 80px 0;
+    &__container {
+      width: 100%;
+    }
+    &__img {
+      width: 31%;
+      transform: translate(0, calc( -27% - 80px ));
+    }
+    &__subtitle {
+      margin-top: 14px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+  }
+  @media screen and (max-width:550px) {
+    &__title {
+      font-size: 28px;
+    }
+    &__form {
+      padding: 25px;
+    }
+  }
+  @media screen and (max-width:400px) {
+    padding: 60px 0;
+    
+    &__title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    &__text {
+      margin-bottom: 35px;
+      font-size: 14px;
+    }
+  }
+}
+.form-quiz {
+  position: relative;
+  // width: 85%;
+  &__body {
+    margin-bottom: 25px;
+  }
+  &__question {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 50px;
+    padding-right: 50px;
+  }
+  &__fraction {
+    position: absolute;
+    top: 36px;
+    right: 40px;
+    font-family: STIXTwoText;
+    font-size: 36px;
+    line-height: 1.25;
+  }
+  &__fraction span {
+    color: $red;
+  }
+  &__step {
+    display: none;
+    flex-wrap: wrap;
+    margin: 0 -7.5px;
+  }
+  &__step.active {
+    display: flex;
+  }
+  &__label {
+    flex: 0 0 50%;
+    display: inline-block;
+    padding: 0 7.5px;
+    margin-bottom: 15px;
+  }
+  &__radio {
+    display: none;
+  }
+  &__radio-fake {
+    padding: 18px 20px;
+    color: $white;
+    background: rgba(255, 255, 255, 0.05);
+    transition: .25s;
+    height: 100%;
+  }
+  &__radio:checked + &__radio-fake {
+    color: #fff;
+    background-color: $red;
+  }
+  &__radio-fake:hover {
+   color: $red;
+  }
+  &__buttons {
+    display: flex;
+    justify-content: flex;
+  }
+  &__next {
+    margin-left: auto;
+  }
+  @media screen and (max-width:1256px) {
+    &__label {
+      flex: 0 0 100%;
+    }
+  }
+  @media screen and (max-width:550px) {
+    &__question {
+      font-size: 20px;
+      margin-bottom: 35px;
+    }
+    &__fraction {
+      font-size: 30px;
+      right: 25px;
+      top: 20px;
+    }
+  }
+}
+.bonus-for-q {
+  &__title {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 25px;
+  }
+  &__items {
+    display: flex;
+    gap: 35px;
+  }
+  @media screen and (max-width:550px) {
+    &__items {
+      flex-direction: column;
+      align-items: start;
+    }
+  }
+}
+.bonus-for-q-item {
+  border-radius: 10px;
+  background-color: $black;
+  display: flex;
+  padding: 15px;
+  align-items: center;
+  &__img {
+    margin-right: 15px;
+  }
+  &__text {
+    max-width: 245px;
+  }
+}
+
+// ====================== case 
+.case {
+  background-color: $black;
+}
+.experts {
+  position: relative;
+ background-color: #fff;
+}
+.experts::before {
+  content: '';
+  position: absolute;
+  background: url('@img/intro/backgroud_black.jpg');
+  opacity: .25;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+}
+.forums {
+  &__top {
+    margin-bottom: 36px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  &__title {
+    color: $black;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  &__tab-link {
+    color: $darkGrey;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 3px 15px;
+    position: relative;
+    text-align: center;
+  }
+  &__tab-link + &__tab-link {
+    margin-left: 20px;
+  }
+  &__tab-link.active {
+    color: $red;
+  }
+  &__tab-link::before {
+    content: '';
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid $red;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    opacity: 0;
+    transition: .25s;
+  }
+  &__tab-link:hover:not(.active)::before {
+    opacity: 1;
+  }
+  @media screen and (max-width: 768px) {
+    &__top {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    &__tab-link {
+      padding: 3px 5px;
+    }
+    &__title {
+      font-size: 22px;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    &__title {
+      font-size: 20px;
+      flex: 0 0 100%;
+      margin-bottom: 16px;
+    }
+    &__top {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.forum-item {
+  display: flex;
+  align-items: center;
+  min-height: 176px;
+  position: relative;
+  justify-content: space-between;
+  &::before {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -20px;
+    background: linear-gradient(90deg, #8C8C8C 0%, rgba(140, 140, 140, 0.5) 55.16%, rgba(166, 166, 166, 0) 100.87%);
+    width: 100%;
+    height: 1px;
+  }
+  &+& {
+    margin-top: 40px;
+  }
+  &+&:before {
+    display: none;
+  }
+ 
+  &__user {
+    display: flex;
+    align-items: center;
+    flex-basis: 445px;
+  }
+  &__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    filter: grayscale(1);
+    margin-right: 15px;
+  }
+  &__fio-and-post {
+    flex-basis: 330px;
+  }
+  &__fio {
+    font-weight: 500;
+    color: $black;
+    margin-bottom: 5px;
+  }
+  &__name {
+    flex-basis: 495px;
+  }
+  &__post {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  &__title {
+    font-weight: 500;
+    color: $black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid;
+    border-image-source: linear-gradient(90deg, #DA4533 0%, rgba(218, 69, 51, 0) 100.87%);
+    border-image-slice: 1;
+  }
+  &__link {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 176px;
+    flex-basis: 176px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    transition: .25s;
+    position: relative;
+    text-align: center;
+  }
+  &__link:hover {
+    border-color: $red;
+  }
+  &__link::before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: 0;
+    right: -21px;
+    height: 100%;
+    width: 42px;
+    transform: rotate(180deg);
+    background: url('@img/intro/slider-arrow.svg') 0 50% no-repeat;
+    opacity: 0;
+  }
+  &__link:hover::before {
+    opacity: 1;
+  }
+  &__date-day {
+    font-weight: 500;
+    font-size: 18px;  
+    color: $black;
+    margin-bottom: 5px;
+  }
+  &__data-time {
+    color: $black;
+    font-weight: 500;
+  }
+  @media screen and (max-width:1256px) {
+    &__user {
+      flex-basis: 307px;
+    }
+    &__fio-and-post {
+      flex-basis: 192px;
+    }
+    &__name {
+      flex-basis: 416px;
+    }
+    &__link::before {
+      opacity: 1;
+    }
+    &__link {
+      height: 146px;
+      flex-basis: 146px;
+      border-color: $red;
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (max-width:1023px) {
+    &__user {
+      flex-direction: column;
+      flex-basis: 185px;
+      align-items: start;
+    }
+    &__fio-and-post {
+      flex: 1 0 1%;
+    }
+    &__name {
+      flex-basis: 43%;
+    }
+    &__link {
+      height: 133px;
+      flex-basis: 133px;
+    }
+  }
+  @media screen and (max-width:700px) {
+    flex-wrap: wrap;
+    &__user {
+      flex-direction: row;
+      flex: 0 0 100%;
+      margin-bottom: 15px;
+    }
+    &__name {
+      flex: 1 0 1%;
+      margin-right: 20px;
+    }
+  }
+  @media screen and (max-width:420px) {
+    &__name {
+      flex: 0 0 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+// ===================request==========
+
+.request {
+  padding: 100px 0;
+  background-color: $red;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  &__row  {
+    display: flex;
+    position: relative;
+  }
+  &__block {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-family: STIXTwoText;
+    font-weight: 500;
+    font-size: 38px;
+    line-height: 135%;
+    margin-bottom: 16px;
+    width: 700px;
+  }
+  &__text {
+    margin-bottom: 44px;
+    max-width: 600px;
+    opacity: 0.75;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    max-width: 413px;
+  }
+  
+  &__img img {
+    position: relative;
+    z-index: 2;
+  }
+  @media screen and (max-width:1256px) {
+    padding: 60px 0;
+    &__img {
+      max-width: 33%;
+      top: 0;
+    }
+  }
+  @media screen and (max-width:768px) {
+    &__text {
+      max-width: 480px;
+    }
+    &__title {
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+  }
+  @media screen and (max-width:767px) {
+    &__img {
+      display: none;
+    }
+    text-align: center;
+    &__row {
+      justify-content: center;
+      align-items: center;
+    }
+    &__block {
+      align-items: center;
+    }
+    &__text {
+      margin-bottom: 25px;
+    }
+  }
+  @media screen and (max-width: 550px) {
+    text-align: center;
+    &__title {
+      font-size: 28px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    padding: 40px 0;
+    
+    &__title {
+      font-size: 24px;
+      margin-bottom: 12px;
+    }
+    &__text {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+
+  }
+}
+

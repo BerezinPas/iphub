@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ru" class="webp">
+  @@include('html/head.html', {
+    "title": "Home"
+  })
+  <body>
+    @@include('html/header.html', {})
+    <main>
+      <section class="page-404">
+        <div class="page-404__number">4 4
+          <div class="page-404__img">
+            <img src="@img/404/0.png" alt="">
+          </div>
+        </div>
+        <div class="page-404__title">К сожалению, страница не найдена. Вернитесь на главную</div>
+        <a href="index.html" class="btn btn_back">На главную</a>
+      </section>
+    </main>
+    @@include('html/footer.html')
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

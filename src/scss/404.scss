@@ -1,0 +1,32 @@
+.page-404 {
+  background-color: $black;
+  text-align: center;
+  padding-bottom: 130px;
+  &__number  {
+    position: relative;
+    font-family: Gilroy;
+    font-weight: 800;
+    font-size: 477px;
+    line-height: 584px;
+    font-feature-settings: 'tnum' on, 'lnum' on;
+    display: inline-block;
+    background: linear-gradient(90deg, #DA4533 0%, rgba(218, 69, 51, 0.14) 27.6%, rgba(218, 69, 51, 0) 45.72%, rgba(218, 69, 51, 0.14) 68.21%, #DA4533 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .1em;
+  }
+  &__img {
+    position: absolute;
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+  }
+  &__title {
+    margin: -70px auto 30px;
+    font-size: 34px;
+    color: $white;
+    max-width: 650px;
+  }
+}

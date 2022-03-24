@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru" class="webp">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>Home</title>
+</head>
+  <body>
+    <heder class="header">
+  <div class="header__container container">
+    <a href="index.html" class="header__logo">
+      <img src="img/logo.svg" alt="" class="logo">
+    </a>
+    <div class="header__middle">
+      <a href="tel:78888888888" class="header__phone">+7 (888) 888 88 88</a>
+      <button data-modal-open="#modal-request" class="header__button">Получить консультацию</button>
+    </div>
+    <div class="header__left">
+      <div class="header__burger burger ">
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+        <div class="burger__line"></div>
+      </div>
+      <div class="burger-page">
+        <div class="burger-page__body">
+          <div class="burger-page__row">
+            <div class="burger-page__col">
+              <ul class="footer__list footer__list_big">
+                <li class="footer__item">
+                  <a href="allServices.html" class="footer__link">Услуги</a>
+                </li>
+                <li class="footer__item">
+                  <a href="allCases.html" class="footer__link">Кейсы</a>
+                </li>
+                <li class="footer__item">
+                  <a href="faq.html" class="footer__link">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="burger-page__col">
+              <ul class="footer__list">
+                <li class="footer__item">Навигация по сайту:</li>
+                <li class="footer__item">
+                  <a href="mailto:example@iphub.com" class="footer__link">example@iphub.com</a>
+                </li>
+                <li class="footer__item">
+                  <a href="tel:78888888888" class="footer__link">+7 (888) 888 88 88</a>
+                </li>
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">Мы в соцсетях:</li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Facebook</a>
+                </li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Instagram</a>
+                </li>
+                
+              </ul>
+              <ul class="footer__list">
+                <li class="footer__item">Как добраться:</li>
+                <li class="footer__item">
+                  <a href="#" class="footer__link">Схема проезда</a>
+                </li>
+              </ul>
+              <div class="burger-page__img">
+                <img src="img/intro/2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header__menu menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="allServices.html" class="menu__link">Услуги</a></li>
+          <li class="menu__item"><a href="allCases.html" class="menu__link">Кейсы</a></li>
+          <li class="menu__item"><a href="faq.html" class="menu__link">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  
+</heder>
+    <main>
+     <section class="section-catalog">
+      <div class="container">
+       <div class="section-catalog__container">
+        <ul class="breadcrumb">
+          <il class="breadcrumb__item"><a href="#" class="btn btn_back btn_breadcrumb"></a></il>
+          <li class="breadcrumb__item"><a href="#">Главная</a></li>
+          <li class="breadcrumb__item active"><a href="#">Все кейсы</a></li>
+        </ul>
+        <div class="section-catalog__img">
+          <img src="img/allServices/img_serv.png" alt="">
+        </div>
+       </div>
+       <h2 class="section-catalog__title">Все кейсы</h2>
+       <div class="section-catalog__search">
+        <input type="text" class="section-catalog__search-input " placeholder="Начните вводить слово">
+       <button class="section-catalog__search-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M10 3.26154C11.333 3.26032 12.6364 3.65449 13.7454 4.39418C14.8543 5.13387 15.719 6.18585 16.2299 7.41703C16.7409 8.64822 16.8752 10.0033 16.6159 11.3108C16.3566 12.6184 15.7153 13.8196 14.7731 14.7626C13.831 15.7056 12.6303 16.348 11.323 16.6085C10.0157 16.869 8.66053 16.7359 7.42888 16.2261C6.19723 15.7163 5.14446 14.8526 4.40376 13.7443C3.66306 12.6361 3.2677 11.333 3.2677 10C3.27578 8.2164 3.98747 6.50807 5.2481 5.24629C6.50873 3.9845 8.21641 3.27125 10 3.26154ZM10 2C8.41775 2 6.87103 2.46919 5.55544 3.34824C4.23985 4.22729 3.21447 5.47672 2.60897 6.93853C2.00347 8.40034 1.84504 10.0089 2.15372 11.5607C2.4624 13.1126 3.22433 14.538 4.34315 15.6569C5.46197 16.7757 6.88743 17.5376 8.43928 17.8463C9.99113 18.155 11.5997 17.9965 13.0615 17.391C14.5233 16.7855 15.7727 15.7602 16.6518 14.4446C17.5308 13.129 18 11.5822 18 10C18 7.87827 17.1571 5.84344 15.6569 4.34315C14.1566 2.84285 12.1217 2 10 2Z" fill="white"/>
+          <path d="M23.3336 22.1937L18.4203 17.2471L17.4736 18.1871L22.387 23.1337C22.4487 23.1959 22.522 23.2453 22.6029 23.2791C22.6837 23.3129 22.7703 23.3305 22.8579 23.3308C22.9455 23.3311 23.0323 23.3141 23.1134 23.2809C23.1944 23.2477 23.2681 23.1988 23.3303 23.1371C23.3925 23.0754 23.4419 23.002 23.4757 22.9212C23.5095 22.8404 23.527 22.7537 23.5273 22.6661C23.5276 22.5785 23.5107 22.4917 23.4775 22.4107C23.4442 22.3296 23.3954 22.2559 23.3336 22.1937Z" fill="white"/>
+          </svg>
+       </button>
+       </div>
+       <div class="section-catalog__filter filter">
+        <div class="filter__name">Категории</div>
+        <div class="filter__select select ">
+          <div class="select__preview">1233
+            <div class="filter__icon">
+              <svg width="16" height="9" viewBox="0 0 16 9" fill="none"   xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L8 8L15 1" stroke="white"/>
+              </svg>
+            </div>
+          </div>
+          <div class="filter__items select__list">
+           
+            <label  class="filter__item">
+              <input type="checkbox" class="checkbox">
+              <div class="filter__checkbox-fake">Все услуги</div>
+            </label>
+            <label  class="filter__item">
+              <input type="checkbox" class="checkbox" checked>
+              <div class="filter__checkbox-fake">Патенты</div>
+            </label>
+            <label  class="filter__item">
+              <input type="checkbox" class="checkbox">
+              <div class="filter__checkbox-fake">Дизайн</div>
+            </label>
+            <label  class="filter__item">
+              <input type="checkbox" class="checkbox">
+              <div class="filter__checkbox-fake">IT</div>
+            </label>
+            <label  class="filter__item">
+              <input type="checkbox" class="checkbox">
+              <div class="filter__checkbox-fake">Защита</div>
+            </label>
+            <label  class="filter__item">
+              <input type="checkbox" class="checkbox">
+              <div class="filter__checkbox-fake">Управление</div>
+            </label>
+            <label  class="filter__item">
+              <input type="checkbox" class="checkbox">
+              <div class="filter__checkbox-fake">Обучение</div>
+            </label>
+          </div>
+        </div>
+       </div>
+       <div class="catalog swiper_case ">
+          <div class="catalog__col catalog__col_big">
+            <a href="case.html" class="swiper-item">
+              <div class="swiper-item__arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 1.00024L1.00032 19.0002M19 1.00024H1M19 1.00024V19.0002" stroke="#5C5C5C" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>                      
+              </div>
+              <div class="swiper-item__img">
+                <img src="img/case-logos/03.svg" alt="">
+              </div>
+
+              <div class="swiper-item__right">
+                <h4 class="swiper-item__title">Регистрация товарного знака в Роспатенте</h4>
+                <p class="swiper-item__text">Регистрация прав инновационные устройства, способы или технологии</p>
+              </div>
+            </a>
+          </div>
+          <div class="catalog__col catalog__col_big">
+            <a href="case.html" class="swiper-item">
+              <div class="swiper-item__arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 1.00024L1.00032 19.0002M19 1.00024H1M19 1.00024V19.0002" stroke="#5C5C5C" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>                      
+              </div>
+              <div class="swiper-item__img">
+                <img src="img/case-logos/01.svg" alt="">
+              </div>
+
+              <div class="swiper-item__right">
+                <h4 class="swiper-item__title">Регистрация товарного знака в Роспатенте</h4>
+                <p class="swiper-item__text">Регистрация прав инновационные устройства, способы или технологии</p>
+              </div>
+            </a>
+          </div>
+          <div class="catalog__col catalog__col_big">
+            <a href="case.html" class="swiper-item">
+              <div class="swiper-item__arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 1.00024L1.00032 19.0002M19 1.00024H1M19 1.00024V19.0002" stroke="#5C5C5C" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>                      
+              </div>
+              <div class="swiper-item__img">
+                <img src="img/case-logos/02.svg" alt="">
+              </div>
+
+              <div class="swiper-item__right">
+                <h4 class="swiper-item__title">Регистрация товарного знака в Роспатенте</h4>
+                <p class="swiper-item__text">Регистрация прав инновационные устройства, способы или технологии</p>
+              </div>
+            </a>
+          </div>
+          <div class="catalog__col catalog__col_big">
+            <a href="case.html" class="swiper-item">
+              <div class="swiper-item__arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 1.00024L1.00032 19.0002M19 1.00024H1M19 1.00024V19.0002" stroke="#5C5C5C" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>                      
+              </div>
+              <div class="swiper-item__img">
+                <img src="img/case-logos/03.svg" alt="">
+              </div>
+
+              <div class="swiper-item__right">
+                <h4 class="swiper-item__title">Регистрация товарного знака в Роспатенте</h4>
+                <p class="swiper-item__text">Регистрация прав инновационные устройства, способы или технологии</p>
+              </div>
+            </a>
+          </div>
+          <div class="catalog__col catalog__col_big">
+            <a href="case.html" class="swiper-item">
+              <div class="swiper-item__arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 1.00024L1.00032 19.0002M19 1.00024H1M19 1.00024V19.0002" stroke="#5C5C5C" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>                      
+              </div>
+              <div class="swiper-item__img">
+                <img src="img/case-logos/01.svg" alt="">
+              </div>
+
+              <div class="swiper-item__right">
+                <h4 class="swiper-item__title">Регистрация товарного знака в Роспатенте</h4>
+                <p class="swiper-item__text">Регистрация прав инновационные устройства, способы или технологии</p>
+              </div>
+            </a>
+          </div>
+          <div class="catalog__col catalog__col_big">
+            <a href="case.html" class="swiper-item">
+              <div class="swiper-item__arrow">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 1.00024L1.00032 19.0002M19 1.00024H1M19 1.00024V19.0002" stroke="#5C5C5C" stroke-width="2" stroke-linejoin="round"/>
+                  </svg>                      
+              </div>
+              <div class="swiper-item__img">
+                <img src="img/case-logos/02.svg" alt="">
+              </div>
+
+              <div class="swiper-item__right">
+                <h4 class="swiper-item__title">Регистрация товарного знака в Роспатенте</h4>
+                <p class="swiper-item__text">Регистрация прав инновационные устройства, способы или технологии</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+     </section>
+     <section class="request">
+      <div class="container">
+        <div class="request__row">
+          <div class="request__block">
+            <h3 class="request__title">У вас остались вопросы?<br>Оставьте заявку, мы вам поможем!</h3>
+            <p class="request__text">У нас есть решения для всех ваших потребностей в сфере защиты и регистрации интеллектуальной собственности</p>
+            <button data-modal-open="#modal-request" class="btn-big btn-big_black">Оставить заявку на консультацию</button>
+          </div>
+          <div class="request__img">
+            <img src="img/request/01.png" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+    </main>
+    <footer class="footer">
+  <div class="container">
+   <div class="footer__body">
+    <div class="footer__top">
+      <div class="footer__logo">
+        <img src="img/footer/logo.svg" alt="">
+      </div>
+      <div class="footer__top-inner">
+        <div class="footer__text">Общество с ограниченной
+          ответственностью «Центр интеллектуальной собственности и инноваций „АйПиХаб“»</div>
+          <div class="footer__address-body">
+            <div class="footer__address">123317, г. Москва, Пресненская наб., д.
+              8, стр. 1, эт. 3, п. 1, оф. 10</div>
+              <div class="footer__inn-body">
+                <div class="footer__inn"><span>ИНН:</span> 7703472433</div>
+                <div class="footer__inn"><span>КПП:</span> 770301001</div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div class="footer__line"></div>
+    <div class="footer__main">
+      <ul class="footer__list">
+        <li class="footer__item">Навигация по сайту:</li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Услуги</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Кейсы</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">FAQ</a>
+        </li>
+      </ul>
+      <ul class="footer__list">
+        <li class="footer__item">Наши контакты:</li>
+        <li class="footer__item">
+          <a href="mailto:example@iphub.com" class="footer__link">example@iphub.com</a>
+        </li>
+        <li class="footer__item">
+          <a href="tel:78888888888" class="footer__link">+7 (888) 888 88 88</a>
+        </li>
+        <li class="footer__item footer__item_tablet_db">
+          <a href="#" class="footer__link">Схема проезда</a>
+        </li>
+      </ul>
+      <ul class="footer__list footer__list_social">
+        <li class="footer__item">Мы в соцсетях:</li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Facebook</a>
+        </li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Instagram</a>
+        </li>
+        
+      </ul>
+      <ul class="footer__list footer__list_tablet_dn">
+        <li class="footer__item">Как добраться:</li>
+        <li class="footer__item">
+          <a href="#" class="footer__link">Схема проезда</a>
+        </li>
+      </ul>
+    </div>
+    <div class="footer__bottom">
+      <div class="footer__copy">© 2021 IPhub. Все права защищены.</div>
+      <div class="footer__bottom-item"><a href="#">Публичная оферта</a></div>
+      <div class="footer__bottom-item"><a href="#">Пользовательское соглашение</a></div>
+    </div>
+   </div>
+  </div>
+</footer>
+
+<div id="modal-request" class="modal " data-modal-close="">
+  <div class="modal__window">
+    <button class="modal__close" data-modal-close="">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L21 21M21 1L1 21" stroke="white" stroke-width="1.5"/>
+        </svg>
+    </button>
+    <div class="modal__title">Оставьте заявку</div>
+    <div class="modal__text">Укажите свои данные, и наш специалист свяжется с вами</div>
+    <form action="#" class="modal__form form-request">
+      <label  class="form-request__label">
+        Как к вам обращаться
+        <input type="text" class="form-request__input">
+        <div class="text-danger">123</div>
+      </label>
+      <label  class="form-request__label error">
+        Номер телефона / WhatsApp
+        <input type="tel" class="form-request__input">
+        <div class="text-danger">Укажите ваш номер телефона</div>
+      </label>
+      <label  class="form-request__label">
+        Почта
+        <input type="email" class="form-request__input">
+        <div class="text-danger">Укажите ваш email</div>
+      </label>
+      <label  class="form-request__label">
+        Запрос
+        <textarea class="form-request__input"  cols="30" rows="6"></textarea>
+      </label>
+      <label  class="form-request__label form-request__label_confirm">
+        <input type="checkbox" class="checkbox">
+        <div class="checkbox-fake">
+          <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_745_819)">
+            <path d="M3.535 8.27494L0.563576 5.30352C0.385058 5.125 0.385058 4.83556 0.563576 4.65702L1.21006 4.01052C1.38858 3.83199 1.67804 3.83199 1.85656 4.01052L3.85825 6.0122L8.14567 1.72482C8.32418 1.5463 8.61365 1.5463 8.79217 1.72482L9.43865 2.37131C9.61717 2.54983 9.61717 2.83928 9.43865 3.01781L4.1815 8.27496C4.00297 8.45348 3.71352 8.45348 3.535 8.27494Z" fill="white"/>
+            </g>
+            <defs>
+            <clipPath id="clip0_745_819">
+            <rect width="9.14286" height="9.14286" fill="white" transform="translate(0.429199 0.428467)"/>
+            </clipPath>
+            </defs>
+            </svg>
+            
+        </div>
+       <p class="form-request__label-text">
+        Я принимаю соглашение на <a href="#">обработку персональных данных</a> и <a href="#">политику конфиденциальности</a>
+       </p>
+      </label>
+      <div class="modal__buttons">
+        <button class="btn">Отправить</button>
+      </div>
+      
+    </form>
+  </div>
+</div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,226 @@
+.section-catalog {
+  padding-bottom:  160px;
+  background-color: $black;
+  &__container {
+    position: relative;
+  }
+  &__img {
+    position: absolute;
+    right: 0;
+    top: 36px;
+    width: 295px;
+    display: none;
+  }
+  &__title {
+    font-size: 38px;
+    line-height: 135%;
+    color: #fff;
+    font-family: STIXTwoText;
+    margin-bottom: 50px;
+  }
+  &__search {
+    position: relative;
+    width: 907px;
+    margin-bottom: 25px;
+  }
+  &__search-input {
+    padding: 15px;
+    padding-right: 50px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    width: 100%;
+    color: #fff;
+    border: 1px solid transparent;
+    transition: border-color .25s;
+  }
+  &__search-input:focus {
+    border-color: #fff;
+  }
+  &__search-btn {
+    position: absolute;
+    right: 3px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 12px;
+  }
+  @media screen and (max-width: 1256px) {
+    padding-bottom: 120px;
+    &__search {
+      width: 100%;
+    }
+    &__title {
+      margin-bottom: 40px;
+    }
+    &__img {
+      top: 20px;
+      width: 264px;
+    }
+    @media screen and (max-width: 768px) {
+      padding-bottom: 80px;
+      &__title {
+        font-size: 32px;
+      }
+      &__img {
+        width: 38%;
+      }
+    }
+    @media screen and (max-width: 550px) {
+      &__title {
+        font-size: 28px;
+        margin-bottom: 35px;
+      }
+      &__search {
+        margin-bottom: 20px;
+      }
+    }
+
+    @media screen and (min-width: 480px) {
+      &__img {
+        display: block;
+      }
+    }
+    @media screen and (max-width: 400px) {
+      padding-bottom: 60px;
+      &__title {
+        font-size: 24px;
+      }
+    }
+  }
+}
+.filter {
+  margin-bottom: 35px;
+  display: flex;
+  align-items: center;
+  &__name {
+    font-weight: 500;
+    margin-right: 15px;
+    text-transform: uppercase;
+  }
+  &__select {
+    width: 100%;
+  }
+  &__items {
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+  }
+  &__icon {
+    display: none;
+    position: absolute;
+    z-index: 5;
+    right: 20px;
+    top: 20px;
+    pointer-events: none;
+  }
+  &__checkbox-fake {
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    transition: .25s;
+  }
+  &__checkbox-fake:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  input:checked + &__checkbox-fake {
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+  @media screen and (max-width: 1256px) {
+    flex-wrap: wrap;
+    
+    &__name {
+      flex: 0 0 100%;
+      margin-bottom: 20px;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    &__select {
+      height: 46px;
+    }
+    &__icon {
+      display: block;
+    }
+    &__items {
+      flex-direction: column;
+      width: 100%;
+      position: absolute;
+      background-color: $black;
+      z-index: 2;
+    }
+  }
+}
+.catalog {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+  row-gap: 30px;
+  &__col {
+    flex: 0 0 25%;
+    padding: 0 10px;
+  }
+  &__col_big {
+    flex: 0 0 50%;
+  }
+  &__row-faq {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  @media screen and (max-width: 1256px) {
+    &__col {
+      flex: 0 0 33.3%;
+    }
+    &__col_big {
+      flex: 0 0 50%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    row-gap: 20px;
+    &__col {
+      flex: 0 0 50%;
+    }
+    &__col_big {
+      flex: 0 0 100%;
+    }
+    &__row-faq {
+      row-gap: 20px;
+    }
+  }
+  @media screen and (max-width: 440px) {
+    &__col {
+      flex: 0 0 100%;
+    }
+  }
+
+}
+.select {
+
+  position: relative;
+  height: 46px;
+  overflow: hidden;
+  width: max-content;
+  &.active  {
+    overflow:visible;
+    height: auto;
+  }
+  &__preview {
+    display: none;
+    border-radius: 8px;
+    position: relative;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.15);
+    color: #fff;
+  }
+  &.active &__list {
+    background-color: $black;
+    z-index: 2;
+    top: 0px;
+  }
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+    &__preview {
+      display: block;
+    }
+  }
+}

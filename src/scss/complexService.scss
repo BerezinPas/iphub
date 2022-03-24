@@ -1,0 +1,103 @@
+.complex-service {
+  background-color: $black;
+
+  &__banner .banner__title {
+    max-width: 700px;
+    font-size: 55px;
+  }
+  &__banner .banner__text {
+    max-width: 600px;
+    margin-bottom: 48px;
+  }
+  &__banner .banner__img {
+    width: 370px;
+  }
+
+  @media screen and (min-width:1024px) {
+    &__banner {
+      margin-bottom: 200px;
+    }
+  }
+
+  @media screen and (max-width:1256px) {
+    &__banner .banner__title {
+      font-size: 44px;
+      width: 50%;
+    }
+    &__banner .banner__text {
+      width: 50%;
+    }
+    &__banner .banner__img {
+      transform: translate(0);
+      top: 0;
+      width: 40%;
+      right: 0;
+    }
+  }
+  @media screen and (max-width:768px) {
+    &__banner .banner__text {
+      margin-bottom: 40px;
+    }
+    
+  }
+  @media screen and (max-width:600px) {
+    &__banner .banner__text {
+      margin-bottom: 35px;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width:400px) {
+    &__banner .banner__title {
+      font-size: 34px;
+    }
+    &__banner .banner__text {
+      margin-bottom: 30px;
+      width: 100%;
+    }
+  }
+}
+.logos-swiper {
+  padding-bottom: 160px;
+}
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+}
+.section_black {
+  background-color: $black;
+  padding-bottom: 160px;
+}
+.process-item {
+  display: flex;
+  justify-content: space-between;
+  &__img {
+    width: 392px;
+  }
+  &__block {
+    max-width: 700px;
+  }
+  &__list {
+    list-style-type: disc;
+    padding-left: 26px;
+    padding-bottom: 16px;
+  }
+  &__title {
+    margin-bottom: 8px;
+    color: #fff;
+    font-weight: 500;
+  }
+}
+.faq {
+  &__title {
+    font-size: 38px;
+    line-height: 135%;
+    color: #fff;
+    margin-bottom: 50px;
+    font-family: STIXTwoText;
+  }
+}
+
