@@ -176,7 +176,6 @@
     margin-bottom: 0;
   }
   &_case &-item:hover &-item__img {
-    padding-bottom: 0;
     opacity: 1;
   }
   &_case &-item__img img {
@@ -295,10 +294,6 @@
   flex-direction: column;
   border-radius: 8px;
   background-color: $black;
-  // min-height: 400px;
-  // height: 72%;
-  // padding-bottom: 138.5%;
-  // height: 138.5%;
   height: 100%;
   overflow: hidden;
   cursor: pointer;

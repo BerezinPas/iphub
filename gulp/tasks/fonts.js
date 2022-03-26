@@ -3,14 +3,15 @@ import fonter from "gulp-fonter";
 import ttf2woff2 from "gulp-ttf2woff2";
 
 export const otfTotft = () => {
-  let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
-  // fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
-  //   if (fontsFiles) {
-  //     if (fs.existsSync(fontsFile)){
-  //       return 
-  //     }
-  //   }
-  // });
+  // let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+  let fontsFile = app.path.build.fonts;
+  fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
+    if (fontsFiles) {
+      if (fs.existsSync(fontsFile)){
+        return 
+      }
+    }
+  });
   return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`, {})
   .pipe(app.plugins.plumber(
     app.plugins.notify.onError({
@@ -25,10 +26,10 @@ export const otfTotft = () => {
 }
 
 export const ttfToWoff = () => {
-  // let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
-  // if (fs.existsSync(fontsFile)) {
-  //   return app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {});
-  // } 
+  let fontsFile = app.path.build.fonts;
+  if (fs.existsSync(fontsFile)) {
+    return app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {});
+  } 
  
 
   return app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {})
@@ -47,11 +48,11 @@ export const ttfToWoff = () => {
   .pipe(app.gulp.dest(`${app.path.build.fonts}`))
 }
 export const fontStyle = () => {
-  let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+  let fontsFile = app.path.build.fonts;
   fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
     if (fontsFiles) {
-      if (fs.existsSync(fontsFile)) {
-      // if (!fs.existsSync(fontsFile)) {
+      // if (fs.existsSync(fontsFile)) {
+      if (!fs.existsSync(fontsFile)) {
         fs.writeFile(fontsFile, '', cb);
         let newFileOnly;
         for (let i = 0; i < fontsFiles.length; i++) {

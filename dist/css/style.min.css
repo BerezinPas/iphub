@@ -1084,7 +1084,6 @@ button.swiper-pagination-bullet {
   margin-bottom: 0;
 }
 .swiper_case .swiper-item:hover .swiper-item__img {
-  padding-bottom: 0;
   opacity: 1;
 }
 .swiper_case .swiper-item__img img {

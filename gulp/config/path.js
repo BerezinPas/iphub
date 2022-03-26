@@ -28,7 +28,7 @@ export const path = {
     img: `${srcFolder}/img/**/*.{jpeg,jpg,png,gif,webp,svg}`,
     files: `${srcFolder}/files/**/*.*`,
   },
-  clean: buildFolder,
+  clean: [`${buildFolder}/**/*.*`, `!${buildFolder}/fonts/*.*` ],
   srcFolder: srcFolder,
   rootFolder: rootFolder,
   ftp: '',
